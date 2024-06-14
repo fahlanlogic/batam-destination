@@ -21,13 +21,13 @@ export default function Navbar() {
         <h1 className="font-bold">BatamDestination</h1>
         <div className="flex w-full mx-auto text-xs sm:text-sm justify-around md:justify-end gap-6">
           <div className="flex items-center gap-2">
-            <div className="p-1 rounded-full bg-green-600 text-white text-[10px]">
+            <div className="p-1 rounded-full bg-green-600 text-white text-[10px] sm:text-xs">
               <BsTelephoneFill />
             </div>
             <p>081188876677</p>
           </div>
           <div className="flex items-center gap-2">
-            <div className="p-1 rounded-full bg-green-600 text-white text-[10px]">
+            <div className="p-1 rounded-full bg-green-600 text-white text-[10px] sm:text-xs">
               <IoMail />
             </div>
             <p>batamdestination@gmail.com</p>

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-wrapper {
+  margin-bottom: 50px;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: -30 !important;
+  left: 50%;
+  /* transform: translateX(-50%); */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #16a34a;
+}
