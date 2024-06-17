@@ -7,10 +7,12 @@ import "swiper/css/bundle";
 import { useEffect, useState } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaBus } from "react-icons/fa";
+import { FaCommentAlt } from "react-icons/fa";
 
 export default function Home() {
   SwiperCore.use([Pagination, Autoplay, Navigation]);
   const [tourPlaces, setTourPlaces] = useState([]);
+  const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
     const place = [
@@ -51,7 +53,47 @@ export default function Home() {
           "https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ];
+
+    const tourReviews = [
+      {
+        id: 1,
+        name: "Hafizh",
+        title: "Traveller",
+        comment:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+      },
+      {
+        id: 2,
+        name: "Hafizah",
+        title: "Traveller",
+        comment:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+      },
+      {
+        id: 3,
+        name: "Salahudin",
+        title: "Traveller",
+        comment:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+      },
+      {
+        id: 4,
+        name: "John",
+        title: "Traveller",
+        comment:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+      },
+      {
+        id: 5,
+        name: "Alexander",
+        title: "Traveller",
+        comment:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+      },
+    ];
+
     setTourPlaces(place);
+    setReviews(tourReviews);
   }, []);
 
   // const chunkArray = (array, size) => {
@@ -246,6 +288,54 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Tour Review */}
+      <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
+        <h1 className="text-4xl md:text-5xl font-extrabold py-14">
+          Tour Reviews
+        </h1>
+        <Swiper
+          pagination={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+          }}>
+          {reviews.map(reviewer => (
+            <SwiperSlide key={reviewer.id}>
+              <div className="relative w-64 xl:w-80 mx-auto">
+                <p className="text-sm absolute z-10 px-4 text-neutral-500 font-light leading-8 flex h-full items-center w-full pb-12 xl:pb-16 xl:text-base">
+                  {reviewer.comment}
+                </p>
+                <FaCommentAlt
+                  className="w-64 xl:w-80 h-64 xl:h-80 text-white mb-7 text-center mx-auto"
+                  style={{
+                    filter: "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2))",
+                  }}
+                />
+              </div>
+              <h3 className="font-semibold text-lg mb-2">{reviewer.name}</h3>
+              <p className="text-sm text-neutral-500 font-light">
+                {reviewer.title}
+              </p>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </main>
   );
