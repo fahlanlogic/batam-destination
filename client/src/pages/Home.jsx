@@ -5,6 +5,8 @@ import SwiperCore from "swiper";
 import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css/bundle";
 import { useEffect, useState } from "react";
+import { FaLocationArrow } from "react-icons/fa6";
+import { FaBus } from "react-icons/fa";
 
 export default function Home() {
   SwiperCore.use([Pagination, Autoplay, Navigation]);
@@ -95,7 +97,7 @@ export default function Home() {
               Enjoy Batam's natural charm, a combination of white sandy beaches,
               lush green forests and stunning sunsets
             </p>
-            <button className="bg-green-600 px-4 py-2 rounded-full text-neutral-900 font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
+            <button className="bg-green-600 px-4 py-2 rounded-full text-white font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
               Explore
             </button>
           </div>
@@ -159,45 +161,91 @@ export default function Home() {
       </div>
 
       {/* Tour Vehicle */}
-      <div className="min-h-screen mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
-        <h1 className="text-4xl md:text-5xl font-extrabold my-14">
-          Tour Vehicle
-        </h1>
-        <div className="sm:py-7">
-          <div className="flex bg-green-600 py-2 rounded-full font-semibold text-neutral-800 text-sm w-fit mx-auto px-8">
-            <p className="pr-8">Daily</p>
-            <p className="border-x px-8 border-neutral-800">Weekly</p>
-            <p className="pl-8">Monthly</p>
+      <div className="h-[90vh] flex items-center mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
+        <div className="">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-14">
+            Tour Vehicle
+          </h1>
+          <div className="sm:py-7">
+            <div className="flex bg-green-600 py-2 rounded-full font-semibold text-white text-sm w-fit mx-auto px-8">
+              <p className="pr-8">Daily</p>
+              <p className="border-x px-8 border-white">Weekly</p>
+              <p className="pl-8">Monthly</p>
+            </div>
+          </div>
+          <div className="flex justify-between my-10">
+            <img
+              src="../../public/avanza.png"
+              alt=""
+              className="h-28 sm:h-32 hidden sm:block md:h-32 lg:h-44 xl:h-52"
+            />
+            <img
+              src="../../public/innova.png"
+              alt=""
+              className="h-[122px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
+            />
+            <img
+              src="../../public/hiace.png"
+              alt=""
+              className="h-[122px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
+            />
+          </div>
+          <p className="text-sm text-neutral-700 leading-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+            delectus voluptates unde ipsam, blanditiis cumque laboriosam vitae
+            eveniet officiis ipsa officia perspiciatis numquam voluptatibus
+            earum veniam nostrum sunt. Ipsam, consequatur! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Ut quibusdam cumque dolorum
+            fugiat temporibus totam facere assumenda anim.
+          </p>
+          <button className="text-sm font-semibold bg-green-600 text-white rounded-full px-3 py-2 mt-7 hover:scale-110 duration-500">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      {/* Why choose us */}
+      <div className="bg-neutral-100 pb-14">
+        <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
+          <h1 className="text-4xl md:text-5xl font-extrabold py-14">
+            Why Choose Us?
+          </h1>
+          <div className="flex flex-col sm:flex-row justify-center gap-10">
+            <div className="group">
+              <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
+                $
+              </div>
+              <h3 className="font-semibold text-lg mb-3">Value for money</h3>
+              <p className="font-light text-neutral-500 leading-6 text-sm">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, nulla perspiciatis odio quibusdam laudantium est nihil
+                ad! Maxime nihil voluptatum.
+              </p>
+            </div>
+            <div className="group">
+              <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
+                <FaLocationArrow />
+              </div>
+              <h3 className="font-semibold text-lg mb-3">Beatiful Place</h3>
+              <p className="font-light text-neutral-500 leading-6 text-sm">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, nulla perspiciatis odio quibusdam laudantium est nihil
+                ad! Maxime nihil voluptatum.
+              </p>
+            </div>
+            <div className="group">
+              <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
+                <FaBus />
+              </div>
+              <h3 className="font-semibold text-lg mb-3">Passionate Travel</h3>
+              <p className="font-light text-neutral-500 leading-6 text-sm">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat, nulla perspiciatis odio quibusdam laudantium est nihil
+                ad! Maxime nihil voluptatum.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="flex justify-between my-10">
-          <img
-            src="../../public/avanza.png"
-            alt=""
-            className="h-28 sm:h-32 hidden sm:block md:h-32 lg:h-44 xl:h-52"
-          />
-          <img
-            src="../../public/innova.png"
-            alt=""
-            className="h-[122px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
-          />
-          <img
-            src="../../public/hiace.png"
-            alt=""
-            className="h-[122px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
-          />
-        </div>
-        <p className="text-sm text-neutral-700 leading-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-          delectus voluptates unde ipsam, blanditiis cumque laboriosam vitae
-          eveniet officiis ipsa officia perspiciatis numquam voluptatibus earum
-          veniam nostrum sunt. Ipsam, consequatur! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Ut quibusdam cumque dolorum fugiat
-          temporibus totam facere assumenda anim.
-        </p>
-        <button className="text-sm font-semibold bg-green-600 rounded-full px-3 py-2 mt-7 hover:scale-110 duration-500">
-          Book Now
-        </button>
       </div>
     </main>
   );
