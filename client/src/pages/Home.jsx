@@ -21,39 +21,93 @@ export default function Home() {
     const place = [
       {
         id: 1,
-        name: "Pantai Marina",
-        image:
-          "https://ak-d.tripcdn.com/images/1i63n2224rj24o60x536B_W_400_0_R5_Q90.jpg?proc=source/trip",
+        name: "Pulau Abang",
+        image: "public/pulau-abang.jpg",
+        description:
+          "Salah satu unggulan destinasi wisata di Pulau Abang Batam adalah pemandangan bawah lautnya yang indah, dengan terumbu karang berwarna-warni yang terkenal dengan sebutan Blue Coral.",
+        discount_price: 10000,
+        original_price: 15000,
       },
       {
         id: 2,
-        name: "Pantai Marina",
-        image:
-          "https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        name: "Pulau Ranoh",
+        image: "public/pulau-ranoh.jpg",
+        description:
+          "Pulau ini menawarkan keindahan pantai bersih dan pasir putih yang menakjubkan.",
+        discount_price: 10000,
+        original_price: 15000,
       },
       {
         id: 3,
-        name: "Pantai Marina",
-        image:
-          "https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        name: "Pantai Tunjuk",
+        image: "public/pulau-tunjuk.jpg",
+        description:
+          "Menawarkan pantai dengan pasir putih bersih dan panorama matahari terbit dan tenggelam yang memukau.",
+        discount_price: 10000,
+        original_price: 15000,
       },
       {
         id: 4,
-        name: "Pantai Marina 4",
-        image:
-          "https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        name: "Sea Forest Adventure",
+        image: "public/sea-forest-adventure.webp",
+        description:
+          "Wisata air dengan berbagai wahana permainan yang seru, cocok untuk keluarga yang ingin bersenang-senang bersama.",
+        discount_price: 10000,
+        original_price: 15000,
       },
       {
         id: 5,
-        name: "Pantai Marina 5",
-        image:
-          "https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        name: "Pantai Mirota",
+        image: "public/pantai-mirota.webp",
+        description:
+          "Dikenal sebagai surga pasir putih di ujung Batam, pantai ini menawarkan keindahan alam yang masih asli dan terjaga.",
+        discount_price: 10000,
+        original_price: 15000,
       },
       {
         id: 6,
-        name: "Pantai Marina 6",
-        image:
-          "https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        name: "Ocarina Park",
+        image: "public/ocarina.jpg",
+        description:
+          "Dengan luas sekitar 40 hektar, taman ini menawarkan berbagai wahana seperti Waterpark dan Giant Wheels dengan harga tiket yang terjangkau.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 7,
+        name: "Alun-alun Engku Putri",
+        image: "public/engku-putri.jpg",
+        description:
+          "Lapangan besar di pusat kota yang menjadi tempat nongkrong yang ramai terutama pada sore hari.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 8,
+        name: "Welcome To Batam",
+        image: "public/welcome-to-batam.jpg",
+        description:
+          "Sebuah tulisan besar yang mirip dengan Hollywood di Amerika, menjadi tempat hits untuk pengambilan foto.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 9,
+        name: "Hutan Wisata Mata Kucing",
+        image: "public/hutan-wisata-mata-kucing-batam.bmp",
+        description:
+          "Tempat wisata di Batam dimana Anda dapat menikmati wisata alam sambil melihat beberapa fauna seperti elang, monyet, kera hitam, kera cokelat dan masih banyak lagi. Tempat ini juga dikenal sebagai kebun binatang mini.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 10,
+        name: "Pantai Elyora",
+        image: "public/pantai-elyora.jpg",
+        description:
+          "Salah satu spotnya menjadi sangat ikonik karena menghadirkan pemandangan yang Instagrammable.",
+        discount_price: 10000,
+        original_price: 15000,
       },
     ];
 
@@ -111,8 +165,7 @@ export default function Home() {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+          backgroundImage: "url(public/pulau-abang.jpg)",
           height: "100vh",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
@@ -142,7 +195,11 @@ export default function Home() {
           </h1>
           <div className="relative">
             <Swiper
-              autoplay={true}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: true,
+                pauseOnMouseEnter: true,
+              }}
               pagination={true}
               breakpoints={{
                 640: {
@@ -150,6 +207,10 @@ export default function Home() {
                   spaceBetween: 20,
                 },
                 1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                1280: {
                   slidesPerView: 4,
                   spaceBetween: 10,
                 },
@@ -169,18 +230,24 @@ export default function Home() {
                     <div className="bg-neutral-100 w-full absolute bottom-0 p-3 text-left space-y-4 rounded-b-xl">
                       <h3 className="font-bold text-lg">{listing.name}</h3>
                       <p className="text-xs font-light line-clamp-2 md:text-sm text-neutral-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sed aliquam pariatur a assumenda ad soluta, alias
-                        adipisci accusamus eum excepturi facilis officiis eaque?
-                        Eveniet corporis doloremque accusantium, at libero
-                        praesentium.
+                        {listing.description}
                       </p>
-                      <div className="flex items-center gap-3">
-                        <p className="font-bold">Rp 10.000</p>
-                        <p className="font-light line-through text-xs text-neutral-500">
-                          Rp 50.000
+                      {/* <div className="flex items-center gap-3">
+                        <p className="discount-price font-bold">
+                          {listing.discount_price.toLocaleString("id-ID", {
+                            style: "currency",
+                            currency: "IDR",
+                            minimumFractionDigits: 0,
+                          })}
                         </p>
-                      </div>
+                        <p className="original-price font-light line-through text-xs text-neutral-500">
+                          {listing.original_price.toLocaleString("id-ID", {
+                            style: "currency",
+                            currency: "IDR",
+                            minimumFractionDigits: 0,
+                          })}
+                        </p>
+                      </div> */}
                     </div>
                   </div>
                 </SwiperSlide>
