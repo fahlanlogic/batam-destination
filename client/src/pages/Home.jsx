@@ -106,7 +106,7 @@ export default function Home() {
   };
 
   return (
-    <main className="h-[9999px]">
+    <main className="">
       {/* Hero section */}
       <div
         className="hero min-h-screen"
@@ -212,12 +212,12 @@ export default function Home() {
             <img
               src="../../public/innova.png"
               alt=""
-              className="h-[122px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
+              className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
             />
             <img
               src="../../public/hiace.png"
               alt=""
-              className="h-[122px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
+              className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
             />
           </div>
           <p className="text-sm text-neutral-700 leading-6">
@@ -354,7 +354,7 @@ export default function Home() {
       </div>
 
       {/* Question */}
-      <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
+      <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-14 md:px-0">
         <h1 className="text-4xl md:text-5xl font-extrabold py-14">Question?</h1>
         <div className="flex flex-col gap-6 sm:flex-row sm:justify-between px-3 sm:px-0">
           <div className="flex gap-4 items-center group sm:w-1/3">
@@ -427,6 +427,10 @@ export default function Home() {
           </button>
         </form>
       </div>
+
+      <footer className="bg-neutral-800 text-white h-32 flex items-center justify-center w-full">
+        <p>Copyright &copy; 2024 Batam Destination</p>
+      </footer>
     </main>
   );
 }
