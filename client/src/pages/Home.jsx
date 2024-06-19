@@ -96,27 +96,6 @@ export default function Home() {
     setReviews(tourReviews);
   }, []);
 
-  // const chunkArray = (array, size) => {
-  //   const chunkedArray = [];
-  //   for (let i = 0; i < array.length; i += size) {
-  //     chunkedArray.push(array.slice(i, i + size));
-  //   }
-  //   return chunkedArray;
-  // };
-
-  // const getColomns = () => {
-  //   if (window.innerWidth >= 1024) {
-  //     return 4;
-  //   } else if (window.innerWidth >= 640) {
-  //     return 2;
-  //   } else {
-  //     return 1;
-  //   }
-  // };
-
-  // const colomns = getColomns();
-  // const chunks = chunkArray(tourPlaces, colomns);
-
   return (
     <main className="h-[9999px]">
       {/* Hero section */}
@@ -208,7 +187,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-14">
             Tour Vehicle
           </h1>
-          <div className="sm:py-7">
+          <div className="sm:pb-7">
             <div className="flex bg-green-600 py-2 rounded-full font-semibold text-white text-sm w-fit mx-auto px-8">
               <p className="pr-8">Daily</p>
               <p className="border-x px-8 border-white">Weekly</p>
@@ -291,7 +270,7 @@ export default function Home() {
       </div>
 
       {/* Tour Review */}
-      <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
+      <div className="mx-auto text-center px-3 mb-14 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
         <h1 className="text-4xl md:text-5xl font-extrabold py-14">
           Tour Reviews
         </h1>
@@ -319,13 +298,13 @@ export default function Home() {
           {reviews.map(reviewer => (
             <SwiperSlide key={reviewer.id}>
               <div className="relative w-64 xl:w-80 mx-auto">
-                <p className="text-sm absolute z-10 px-4 text-neutral-500 font-light leading-8 flex h-full items-center w-full pb-12 xl:pb-16 xl:text-base">
+                <p className="text-sm absolute z-10 px-4 text-neutral-800 font-light leading-8 flex h-full items-center w-full pb-12 xl:pb-16 xl:text-base">
                   {reviewer.comment}
                 </p>
                 <FaCommentAlt
-                  className="w-64 xl:w-80 h-64 xl:h-80 text-white mb-7 text-center mx-auto"
+                  className="w-64 xl:w-80 h-64 xl:h-80 mb-7 text-center mx-auto text-white"
                   style={{
-                    filter: "drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2))",
+                    filter: "drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2))",
                   }}
                 />
               </div>
@@ -336,6 +315,33 @@ export default function Home() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      {/* Hero section 2 */}
+      <div
+        className="hero"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+          height: "60vh",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+        }}>
+        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="md:max-w-2xl lg:max-w-3xl">
+            <h1 className="mb-10 text-5xl sm:text-7xl font-extrabold">
+              Are You Still Intarested To Tour?
+            </h1>
+            <p className="mb-10 text-sm sm:text-base">
+              We Offer A Wide Range Of Procedures To Help You Get The Perfect
+              Smile
+            </p>
+            <button className="bg-green-600 px-4 py-2 rounded-full text-white font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
+              Book a Tour!
+            </button>
+          </div>
+        </div>
       </div>
     </main>
   );
