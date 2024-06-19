@@ -8,6 +8,9 @@ import { useEffect, useState } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaBus } from "react-icons/fa";
 import { FaCommentAlt } from "react-icons/fa";
+import { FaMap } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+import { IoMail } from "react-icons/io5";
 
 export default function Home() {
   SwiperCore.use([Pagination, Autoplay, Navigation]);
@@ -95,6 +98,12 @@ export default function Home() {
     setTourPlaces(place);
     setReviews(tourReviews);
   }, []);
+
+  const sendMessageToWhatsapp = e => {
+    e.preventDefault();
+    const urlToWhatsapp = `https://api.whatsapp.com/send?phone=6288271230587&text=Hello, I'm ${e.target.name.value} interested in your service. I want to ask about ${e.target.subject.value}. ${e.target.message.value}`;
+    window.open(urlToWhatsapp, "_blank");
+  };
 
   return (
     <main className="h-[9999px]">
@@ -342,6 +351,81 @@ export default function Home() {
             </button>
           </div>
         </div>
+      </div>
+
+      {/* Question */}
+      <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
+        <h1 className="text-4xl md:text-5xl font-extrabold py-14">Question?</h1>
+        <div className="flex flex-col gap-6 sm:flex-row sm:justify-between px-3 sm:px-0">
+          <div className="flex gap-4 items-center group sm:w-1/3">
+            <div className="border border-green-600 rounded-full p-3 group-hover:bg-green-600 duration-500">
+              <FaMap className="text-xl text-green-600 group-hover:text-white duration-500" />
+            </div>
+            <div className="text-left">
+              <p className="font-semibold">Our Office</p>
+              <p className="font-light text-neutral-500 text-sm">
+                Belian, Batam City
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-center group sm:w-1/3">
+            <div className="border border-green-600 rounded-full p-3 group-hover:bg-green-600 duration-500">
+              <IoCall className="text-xl text-green-600 group-hover:text-white duration-500" />
+            </div>
+            <div className="text-left">
+              <p className="font-semibold">Contact Number</p>
+              <p className="font-light text-neutral-500 text-sm">
+                +62 811 888 6677
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-center group sm:w-1/3">
+            <div className="border border-green-600 rounded-full p-3 group-hover:bg-green-600 duration-500">
+              <IoMail className="text-xl text-green-600 group-hover:text-white duration-500" />
+            </div>
+            <div className="text-left">
+              <p className="font-semibold">Email Us</p>
+              <p className="font-light text-neutral-500 text-sm">
+                batamdest@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <form onSubmit={sendMessageToWhatsapp}>
+          <div className="flex justify-between mt-14 flex-col sm:flex-row gap-4 sm:gap-6 px-3 sm:px-0">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              className="p-3 sm:w-1/3 border border-neutral-400 placeholder:text-neutral-400 text-sm rounded-md"
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              className="p-3 sm:w-1/3 border border-neutral-400 placeholder:text-neutral-400 text-sm rounded-md"
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              className="p-3 sm:w-1/3 border border-neutral-400 placeholder:text-neutral-400 text-sm rounded-md"
+            />
+          </div>
+          <div className="px-3 sm:px-0">
+            <textarea
+              placeholder="Message"
+              name="message"
+              rows={6}
+              className="p-3 w-full mt-4 border border-neutral-400 placeholder:text-neutral-400 text-sm rounded-md"
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-green-600 mt-5 px-4 py-2 rounded-full text-white font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
+            Send Message
+          </button>
+        </form>
       </div>
     </main>
   );
