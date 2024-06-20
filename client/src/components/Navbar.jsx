@@ -1,6 +1,5 @@
-// import { RiWhatsappFill } from "react-icons/ri";
-import { BsTelephoneFill } from "react-icons/bs";
 import { IoMail } from "react-icons/io5";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Navbar() {
   const scrollY = window.scrollY;
@@ -22,7 +21,7 @@ export default function Navbar() {
         <div className="flex w-full mx-auto text-xs sm:text-sm justify-around md:justify-end gap-6">
           <div className="flex items-center gap-2">
             <div className="p-1 rounded-full bg-green-600 text-white text-[10px] sm:text-xs">
-              <BsTelephoneFill />
+              <IoLogoWhatsapp />
             </div>
             <p>081271742017</p>
             <p className="hidden sm:block">{" | "}085942025557</p>

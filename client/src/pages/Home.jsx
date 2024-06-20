@@ -9,8 +9,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { FaBus } from "react-icons/fa";
 import { FaCommentAlt } from "react-icons/fa";
 import { FaMap } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
 import { IoMail } from "react-icons/io5";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export default function Home() {
   SwiperCore.use([Pagination, Autoplay, Navigation]);
@@ -155,7 +155,7 @@ export default function Home() {
 
   const sendMessageToWhatsapp = e => {
     e.preventDefault();
-    const urlToWhatsapp = `https://api.whatsapp.com/send?phone=6288271230587&text=Hello, I'm ${e.target.name.value} interested in your service. I want to ask about ${e.target.subject.value}. ${e.target.message.value}`;
+    const urlToWhatsapp = `https://api.whatsapp.com/send?phone=6281271742017&text=Hello, I'm ${e.target.name.value} interested in your service. I want to ask about ${e.target.subject.value}. ${e.target.message.value}`;
     window.open(urlToWhatsapp, "_blank");
   };
 
@@ -436,7 +436,7 @@ export default function Home() {
           </div>
           <div className="flex gap-4 items-center group sm:w-1/3">
             <div className="border border-green-600 rounded-full p-3 group-hover:bg-green-600 duration-500">
-              <IoCall className="text-xl text-green-600 group-hover:text-white duration-500" />
+              <IoLogoWhatsapp className="text-xl text-green-600 group-hover:text-white duration-500" />
             </div>
             <div className="text-left">
               <p className="font-semibold">Contact</p>
@@ -465,6 +465,7 @@ export default function Home() {
               type="text"
               name="name"
               placeholder="Name"
+              required
               className="p-3 sm:w-1/3 border border-neutral-400 placeholder:text-neutral-400 text-sm rounded-md"
             />
             <input
@@ -476,6 +477,7 @@ export default function Home() {
             <input
               type="text"
               name="subject"
+              required
               placeholder="Subject"
               className="p-3 sm:w-1/3 border border-neutral-400 placeholder:text-neutral-400 text-sm rounded-md"
             />
@@ -485,6 +487,7 @@ export default function Home() {
               placeholder="Message"
               name="message"
               rows={6}
+              required
               className="p-3 w-full mt-4 border border-neutral-400 placeholder:text-neutral-400 text-sm rounded-md"
             />
           </div>
