@@ -307,19 +307,18 @@ export default function Home() {
             Why Choose Us?
           </h1>
           <div className="flex flex-col sm:flex-row justify-center gap-10">
-            <div className="group">
+            <div className="group w-1/3">
               <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
                 $
               </div>
               <h3 className="font-semibold text-lg mb-3">Value for money</h3>
               <p className="font-light text-neutral-500 leading-6 text-sm">
-                Our service is the most pocket friendly compared to others.
-                Cheap That doesn't mean it's just ordinary, we will provide
-                excellent service maximum for you to the point that you don't
-                want this tour end.
+                Cheap doesn't mean ordinary, we will provide it maximum
+                excellent service for you even if you don't want this tour to
+                end.
               </p>
             </div>
-            <div className="group">
+            <div className="group w-1/3">
               <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
                 <FaLocationArrow />
               </div>
@@ -330,7 +329,7 @@ export default function Home() {
                 rides available.
               </p>
             </div>
-            <div className="group">
+            <div className="group w-1/3">
               <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
                 <FaBus />
               </div>
