@@ -24,13 +24,14 @@ export default function Navbar() {
             <div className="p-1 rounded-full bg-green-600 text-white text-[10px] sm:text-xs">
               <BsTelephoneFill />
             </div>
-            <p>081188876677</p>
+            <p>081271742017</p>
+            <p className="hidden sm:block">{" | "}085942025557</p>
           </div>
           <div className="flex items-center gap-2">
             <div className="p-1 rounded-full bg-green-600 text-white text-[10px] sm:text-xs">
               <IoMail />
             </div>
-            <p>batamdestination@gmail.com</p>
+            <p>niagaumum1@gmail.com</p>
           </div>
         </div>
       </nav>

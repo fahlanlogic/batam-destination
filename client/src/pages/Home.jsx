@@ -440,10 +440,12 @@ export default function Home() {
               <IoCall className="text-xl text-green-600 group-hover:text-white duration-500" />
             </div>
             <div className="text-left">
-              <p className="font-semibold">Contact Number</p>
-              <p className="font-light text-neutral-500 text-sm">
-                +62 811 888 6677
-              </p>
+              <p className="font-semibold">Contact</p>
+              <div className="font-light flex flex-col xl:gap-2 xl:flex-row text-neutral-500 text-sm">
+                <p>+62812 7174 2017</p>
+                <span className="hidden xl:block">|</span>
+                <p className="hidden sm:block">+62859 4202 5557</p>
+              </div>
             </div>
           </div>
           <div className="flex gap-4 items-center group sm:w-1/3">
@@ -453,7 +455,7 @@ export default function Home() {
             <div className="text-left">
               <p className="font-semibold">Email Us</p>
               <p className="font-light text-neutral-500 text-sm">
-                batamdest@gmail.com
+                niagaumum1@gmail.com
               </p>
             </div>
           </div>
