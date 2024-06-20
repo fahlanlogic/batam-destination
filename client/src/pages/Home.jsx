@@ -117,35 +117,35 @@ export default function Home() {
         name: "Hafizh",
         title: "Traveller",
         comment:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+          "Not bad! Pelayanan Batam Destination sangat unggul, sebanding dengan harga yang ditawarkan dan itupun murah, wow.",
       },
       {
         id: 2,
-        name: "Hafizah",
+        name: "Karim",
         title: "Traveller",
         comment:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+          "First experience of traveling in Batam, fortunately we used the services of Batam Destination, the service was super complete. We just have to enjoy, thank you",
       },
       {
         id: 3,
         name: "Salahudin",
         title: "Traveller",
         comment:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+          "Oke banget, besok lagi kalo mau ke Batam pakai jasa Batam Destination lagi, sepertinya udah yang paling murah dan oke. Worth it!",
       },
       {
         id: 4,
-        name: "John",
-        title: "Traveller",
+        name: "Susanti",
+        title: "Tourist",
         comment:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+          "Saya sebagai turis dari kota lain merasa takjub akan keindahan Kota Batam, Batam Destination membantu saya menikmati itu semua, terimakasih Batam Destination",
       },
       {
         id: 5,
-        name: "Alexander",
+        name: "Rara",
         title: "Traveller",
         comment:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.",
+          "Awalnya bingung mau liburan di Batam pakai jasa mana, muncul Batam Destination di pencarian yang menarik bagi saya, dan saya puas.",
       },
     ];
 
@@ -288,12 +288,11 @@ export default function Home() {
             />
           </div>
           <p className="text-sm text-neutral-700 leading-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-            delectus voluptates unde ipsam, blanditiis cumque laboriosam vitae
-            eveniet officiis ipsa officia perspiciatis numquam voluptatibus
-            earum veniam nostrum sunt. Ipsam, consequatur! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Ut quibusdam cumque dolorum
-            fugiat temporibus totam facere assumenda anim.
+            We provide comfort based on what you choose. Invite your whole
+            family, friends or colleagues for that trip most amazing with us.
+            Starting from daily, weekly even for a whole month we serve you with
+            all our heart and satisfaction. We also provide vehicles with super
+            comfortable facilities for you, it's all here.
           </p>
           <button className="text-sm font-semibold bg-green-600 text-white rounded-full px-3 py-2 mt-7 hover:scale-110 duration-500">
             Book Now
@@ -314,9 +313,10 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-lg mb-3">Value for money</h3>
               <p className="font-light text-neutral-500 leading-6 text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat, nulla perspiciatis odio quibusdam laudantium est nihil
-                ad! Maxime nihil voluptatum.
+                Our service is the most pocket friendly compared to others.
+                Cheap That doesn't mean it's just ordinary, we will provide
+                excellent service maximum for you to the point that you don't
+                want this tour end.
               </p>
             </div>
             <div className="group">
@@ -325,9 +325,9 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-lg mb-3">Beatiful Place</h3>
               <p className="font-light text-neutral-500 leading-6 text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat, nulla perspiciatis odio quibusdam laudantium est nihil
-                ad! Maxime nihil voluptatum.
+                You know Batam is a beautiful place and spectacular to travel,
+                with us, you stay Enjoy the natural beauty of Batam and the
+                rides available.
               </p>
             </div>
             <div className="group">
@@ -336,9 +336,9 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-lg mb-3">Passionate Travel</h3>
               <p className="font-light text-neutral-500 leading-6 text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat, nulla perspiciatis odio quibusdam laudantium est nihil
-                ad! Maxime nihil voluptatum.
+                We really know our customers' desires to enjoy and experience
+                extraordinary tourism. That's all because we also have a passion
+                for this tour.
               </p>
             </div>
           </div>
@@ -406,7 +406,7 @@ export default function Home() {
         <div className="hero-content text-center text-neutral-content">
           <div className="md:max-w-2xl lg:max-w-3xl">
             <h1 className="mb-10 text-5xl sm:text-7xl font-extrabold">
-              Are You Still Intarested To Tour?
+              Are You Still Interested To Tour?
             </h1>
             <p className="mb-10 text-sm sm:text-base">
               We Offer A Wide Range Of Procedures To Help You Get The Perfect
