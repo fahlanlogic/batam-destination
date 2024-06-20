@@ -22,7 +22,7 @@ export default function Home() {
       {
         id: 1,
         name: "Pulau Abang",
-        image: "public/pulau-abang.jpg",
+        image: "./pulau-abang.jpg",
         description:
           "Salah satu unggulan destinasi wisata di Pulau Abang Batam adalah pemandangan bawah lautnya yang indah, dengan terumbu karang berwarna-warni yang terkenal dengan sebutan Blue Coral.",
         discount_price: 10000,
@@ -31,7 +31,7 @@ export default function Home() {
       {
         id: 2,
         name: "Pulau Ranoh",
-        image: "public/pulau-ranoh.jpg",
+        image: "./pulau-ranoh.jpg",
         description:
           "Pulau ini menawarkan keindahan pantai bersih dan pasir putih yang menakjubkan.",
         discount_price: 10000,
@@ -40,7 +40,7 @@ export default function Home() {
       {
         id: 3,
         name: "Pantai Tunjuk",
-        image: "public/pulau-tunjuk.jpg",
+        image: "./pulau-tunjuk.jpg",
         description:
           "Menawarkan pantai dengan pasir putih bersih dan panorama matahari terbit dan tenggelam yang memukau.",
         discount_price: 10000,
@@ -49,7 +49,7 @@ export default function Home() {
       {
         id: 4,
         name: "Sea Forest Adventure",
-        image: "public/sea-forest-adventure.webp",
+        image: "./sea-forest-adventure.webp",
         description:
           "Wisata air dengan berbagai wahana permainan yang seru, cocok untuk keluarga yang ingin bersenang-senang bersama.",
         discount_price: 10000,
@@ -58,7 +58,7 @@ export default function Home() {
       {
         id: 5,
         name: "Pantai Mirota",
-        image: "public/pantai-mirota.webp",
+        image: "./pantai-mirota.webp",
         description:
           "Dikenal sebagai surga pasir putih di ujung Batam, pantai ini menawarkan keindahan alam yang masih asli dan terjaga.",
         discount_price: 10000,
@@ -67,7 +67,7 @@ export default function Home() {
       {
         id: 6,
         name: "Ocarina Park",
-        image: "public/ocarina.jpg",
+        image: "./ocarina.jpg",
         description:
           "Dengan luas sekitar 40 hektar, taman ini menawarkan berbagai wahana seperti Waterpark dan Giant Wheels dengan harga tiket yang terjangkau.",
         discount_price: 10000,
@@ -76,7 +76,7 @@ export default function Home() {
       {
         id: 7,
         name: "Alun-alun Engku Putri",
-        image: "public/engku-putri.jpg",
+        image: "./engku-putri.jpg",
         description:
           "Lapangan besar di pusat kota yang menjadi tempat nongkrong yang ramai terutama pada sore hari.",
         discount_price: 10000,
@@ -85,7 +85,7 @@ export default function Home() {
       {
         id: 8,
         name: "Welcome To Batam",
-        image: "public/welcome-to-batam.jpg",
+        image: "./welcome-to-batam.jpg",
         description:
           "Sebuah tulisan besar yang mirip dengan Hollywood di Amerika, menjadi tempat hits untuk pengambilan foto.",
         discount_price: 10000,
@@ -94,7 +94,7 @@ export default function Home() {
       {
         id: 9,
         name: "Hutan Wisata Mata Kucing",
-        image: "public/hutan-wisata-mata-kucing-batam.bmp",
+        image: "./hutan-wisata-mata-kucing-batam.bmp",
         description:
           "Tempat wisata di Batam dimana Anda dapat menikmati wisata alam sambil melihat beberapa fauna seperti elang, monyet, kera hitam, kera cokelat dan masih banyak lagi. Tempat ini juga dikenal sebagai kebun binatang mini.",
         discount_price: 10000,
@@ -103,7 +103,7 @@ export default function Home() {
       {
         id: 10,
         name: "Pantai Elyora",
-        image: "public/pantai-elyora.jpg",
+        image: "./pantai-elyora.jpg",
         description:
           "Salah satu spotnya menjadi sangat ikonik karena menghadirkan pemandangan yang Instagrammable.",
         discount_price: 10000,
@@ -165,7 +165,7 @@ export default function Home() {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage: "url(public/pulau-abang.jpg)",
+          backgroundImage: "url(./welcome-to-batam.jpg)",
           height: "100vh",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
@@ -272,17 +272,17 @@ export default function Home() {
           </div>
           <div className="flex justify-between my-10">
             <img
-              src="../../public/avanza.png"
+              src="./avanza.png"
               alt=""
               className="h-28 sm:h-32 hidden sm:block md:h-32 lg:h-44 xl:h-52"
             />
             <img
-              src="../../public/innova.png"
+              src="./innova.png"
               alt=""
               className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
             />
             <img
-              src="../../public/hiace.png"
+              src="./hiace.png"
               alt=""
               className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
             />
@@ -397,8 +397,7 @@ export default function Home() {
       <div
         className="hero"
         style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1619880889144-d6e252999afa?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+          backgroundImage: "url(./pulau-abang.jpg)",
           height: "60vh",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
