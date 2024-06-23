@@ -11,8 +11,14 @@ import { FaCommentAlt } from "react-icons/fa";
 import { FaMap } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
 
 export default function Home() {
+  AOS.init({
+    duration: 1000,
+  });
   SwiperCore.use([Pagination, Autoplay, Navigation]);
   const [tourPlaces, setTourPlaces] = useState([]);
   const [reviews, setReviews] = useState([]);
@@ -21,10 +27,10 @@ export default function Home() {
     const place = [
       {
         id: 1,
-        name: "Pulau Abang",
-        image: "./pulau-abang.jpg",
+        name: "Kepri Coral",
+        image: "./kepri-coral.jpg",
         description:
-          "Salah satu unggulan destinasi wisata di Pulau Abang Batam adalah pemandangan bawah lautnya yang indah, dengan terumbu karang berwarna-warni yang terkenal dengan sebutan Blue Coral.",
+          "Selain menikmati pesona laut yang eksotis, para tamu juga bisa menikmati wisata alam yang masih asri inilah hutan mangrove. Di mana para tamu disuguhkan hamparan pepohonan hijau serta spot foto yang menarik untuk diabadikan.",
         discount_price: 10000,
         original_price: 15000,
       },
@@ -58,7 +64,7 @@ export default function Home() {
       {
         id: 5,
         name: "Pantai Mirota",
-        image: "./pantai-mirota.webp",
+        image: "./pantai-mirota.jpg",
         description:
           "Dikenal sebagai surga pasir putih di ujung Batam, pantai ini menawarkan keindahan alam yang masih asli dan terjaga.",
         discount_price: 10000,
@@ -102,10 +108,64 @@ export default function Home() {
       },
       {
         id: 10,
-        name: "Pantai Elyora",
-        image: "./pantai-elyora.jpg",
+        name: "Pantai Glory Melur",
+        image: "./glory-melur.jpg",
         description:
-          "Salah satu spotnya menjadi sangat ikonik karena menghadirkan pemandangan yang Instagrammable.",
+          "Sesuai namanya, Glory Melur dikonsep bergaya resort. Saat datang ke sini, pengunjung akan melihat banyak gazebo dan beberapa aula beratap jerami yang biasanya ada di resort-resort",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 11,
+        name: "Batam Beach Club",
+        image: "./batam-beach-club.jpeg",
+        description:
+          "Begitu sampai di dalam, pengunjung akan merasakan, aroma tepi pantai dan laut. Ada kolam renang menghadap laut serta pasir dan lounge.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 12,
+        name: "Pantai Vio-vio",
+        image: "./vio-vio-beach.jpg",
+        description:
+          "Viovio Beach & Resort menawarkan akomodasi di Galang, Batam dan berjarak 100 meter from Pantai Viovio. Properti ini memiliki fasilitas akses WiFi gratis. Setiap kamar dilengkapi dengan AC. Shower tersedia di kamar mandi.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 13,
+        name: "Batam Food Court",
+        image: "./batam-foodcourt.jpeg",
+        description:
+          "Nagoya Food Court menjual berbagai macam makanan mulai dari menu tradisional, nusantara, western food, chinese food hingga makanan japanese food. Keberadaan Nagoya Food Court bisa dijadikan sebagai referensi untuk memenuhi semua kebutuhan keluarga.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 14,
+        name: "Batam Seafood",
+        image: "./batam-seafood.jpeg",
+        description:
+          "Love Seafood Tanjung Piayu Laut menjadi surganya hidangan laut yang patut dicoba. Dengan konsep unik restoran apung di atas laut, restoran ini tak cuma lezat tapi juga punya pemandangan memesona dan harga terjangkau. Punya daya tarik yang membuat Love Seafood selalu ramai dikunjungi wisatawan.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 15,
+        name: "Batam Zoo",
+        image: "./batam-zoo.jpeg",
+        description:
+          "Anda bisa melihat berbagai binatang yang dipelihara di sana, di antaranya capybara, domba merino, domba garut, kuda poni, burung unta, burung emu, burung rhea, burung macaw, rusa tutul, alpaka, dan hewan lainnya.",
+        discount_price: 10000,
+        original_price: 15000,
+      },
+      {
+        id: 16,
+        name: "Batam Light Festival",
+        image: "./batam-light-festival.png",
+        description:
+          "Tempat wisata ini memiliki konsep taman lampu dan menghadirkan berbagai hiburan menarik seperti dekorasi lighting, air mancur menari atau dancing fountain dan video mapping.",
         discount_price: 10000,
         original_price: 15000,
       },
@@ -173,14 +233,20 @@ export default function Home() {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="md:max-w-2xl lg:max-w-3xl">
-            <h1 className="mb-10 text-6xl sm:text-7xl font-extrabold md:text-8xl lg:text-9xl">
+            <h1
+              data-aos="zoom-in-down"
+              className="mb-10 text-6xl sm:text-7xl font-extrabold md:text-8xl lg:text-9xl">
               Tour Lover in Batam
             </h1>
-            <p className="mb-10 text-sm sm:text-base">
+            <p
+              data-aos="zoom-in-down"
+              className="mb-10 text-sm sm:text-base">
               Enjoy Batam's natural charm, a combination of white sandy beaches,
               lush green forests and stunning sunsets
             </p>
-            <button className="bg-green-600 px-4 py-2 rounded-full text-white font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
+            <button
+              data-aos="zoom-in-up"
+              className="bg-green-600 px-4 py-2 rounded-full text-white font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
               Explore
             </button>
           </div>
@@ -190,16 +256,21 @@ export default function Home() {
       {/* Tour place */}
       <div className="h-screen flex items-center justify-center mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
         <div className="w-full">
-          <h1 className="text-4xl md:text-5xl font-extrabold my-14">
+          <h1
+            data-aos="fade-down"
+            className="text-4xl md:text-5xl font-extrabold my-14">
             Tour Place
           </h1>
-          <div className="relative">
+          <div
+            data-aos="fade-up"
+            className="relative">
             <Swiper
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: true,
-                pauseOnMouseEnter: true,
-              }}
+              // autoplay={{
+              //   delay: 3000,
+              //   disableOnInteraction: true,
+              //   pauseOnMouseEnter: true,
+              // }}
+              navigation={true}
               pagination={true}
               breakpoints={{
                 640: {
@@ -260,11 +331,15 @@ export default function Home() {
       {/* Tour Vehicle */}
       <div className="h-[90vh] flex items-center mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
         <div className="">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-14">
+          <h1
+            data-aos="fade-down"
+            className="text-4xl md:text-5xl font-extrabold mb-14">
             Tour Vehicle
           </h1>
           <div className="sm:pb-7">
-            <div className="flex bg-green-600 py-2 rounded-full font-semibold text-white text-sm w-fit mx-auto px-8">
+            <div
+              data-aos="fade-up"
+              className="flex bg-green-600 py-2 rounded-full font-semibold text-white text-sm w-fit mx-auto px-8">
               <p className="pr-8">Daily</p>
               <p className="border-x px-8 border-white">Weekly</p>
               <p className="pl-8">Monthly</p>
@@ -272,29 +347,36 @@ export default function Home() {
           </div>
           <div className="flex justify-between my-10">
             <img
+              data-aos="fade-right"
               src="./avanza.png"
-              alt=""
-              className="h-28 sm:h-32 hidden sm:block md:h-32 lg:h-44 xl:h-52"
-            />
-            <img
-              src="./innova.png"
               alt=""
               className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
             />
             <img
+              data-aos="fade-up"
+              src="./innova.png"
+              alt=""
+              className="h-28 sm:h-32 hidden sm:block md:h-32 lg:h-44 xl:h-52"
+            />
+            <img
+              data-aos="fade-left"
               src="./hiace.png"
               alt=""
               className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
             />
           </div>
-          <p className="text-sm text-neutral-700 leading-6">
+          <p
+            data-aos="flip-up"
+            className="text-sm text-neutral-700 leading-6">
             We provide comfort based on what you choose. Invite your whole
             family, friends or colleagues for that trip most amazing with us.
             Starting from daily, weekly even for a whole month we serve you with
             all our heart and satisfaction. We also provide vehicles with super
             comfortable facilities for you, it's all here.
           </p>
-          <button className="text-sm font-semibold bg-green-600 text-white rounded-full px-3 py-2 mt-7 hover:scale-110 duration-500">
+          <button
+            data-aos="zoom-in-down"
+            className="text-sm font-semibold bg-green-600 text-white rounded-full px-3 py-2 mt-7 hover:scale-110 duration-500">
             Book Now
           </button>
         </div>
@@ -303,38 +385,64 @@ export default function Home() {
       {/* Why choose us */}
       <div className="bg-neutral-100 pb-14">
         <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
-          <h1 className="text-4xl md:text-5xl font-extrabold py-14">
+          <h1
+            data-aos="fade-down"
+            className="text-4xl md:text-5xl font-extrabold py-14">
             Why Choose Us?
           </h1>
           <div className="flex flex-col sm:flex-row justify-center gap-10">
-            <div className="group w-1/3">
-              <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
+            <div className="group md:w-1/3">
+              <div
+                data-aos="flip-left"
+                className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
                 $
               </div>
-              <h3 className="font-semibold text-lg mb-3">Value for money</h3>
-              <p className="font-light text-neutral-500 leading-6 text-sm">
+              <h3
+                data-aos="fade-right"
+                className="font-semibold text-lg mb-3">
+                Value for money
+              </h3>
+              <p
+                data-aos="fade-right"
+                className="font-light text-neutral-500 leading-6 text-sm">
                 Cheap doesn't mean ordinary, we will provide it maximum
                 excellent service for you even if you don't want this tour to
                 end.
               </p>
             </div>
-            <div className="group w-1/3">
-              <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
+            <div className="group md:w-1/3">
+              <div
+                data-aos="flip-left"
+                className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
                 <FaLocationArrow />
               </div>
-              <h3 className="font-semibold text-lg mb-3">Beatiful Place</h3>
-              <p className="font-light text-neutral-500 leading-6 text-sm">
+              <h3
+                data-aos="fade-left"
+                className="font-semibold text-lg mb-3">
+                Beatiful Place
+              </h3>
+              <p
+                data-aos="fade-left"
+                className="font-light text-neutral-500 leading-6 text-sm">
                 You know Batam is a beautiful place and spectacular to travel,
                 with us, you stay Enjoy the natural beauty of Batam and the
                 rides available.
               </p>
             </div>
-            <div className="group w-1/3">
-              <div className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
+            <div className="group md:w-1/3">
+              <div
+                data-aos="flip-left"
+                className="w-24 h-24 rounded-full border-2 border-green-600 inline-flex items-center justify-center text-green-600 text-4xl group-hover:bg-green-600 group-hover:text-white duration-500 mb-6">
                 <FaBus />
               </div>
-              <h3 className="font-semibold text-lg mb-3">Passionate Travel</h3>
-              <p className="font-light text-neutral-500 leading-6 text-sm">
+              <h3
+                data-aos="fade-right"
+                className="font-semibold text-lg mb-3">
+                Passionate Travel
+              </h3>
+              <p
+                data-aos="fade-right"
+                className="font-light text-neutral-500 leading-6 text-sm">
                 We really know our customers' desires to enjoy and experience
                 extraordinary tourism. That's all because we also have a passion
                 for this tour.
@@ -346,7 +454,9 @@ export default function Home() {
 
       {/* Tour Review */}
       <div className="mx-auto text-center px-3 mb-14 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
-        <h1 className="text-4xl md:text-5xl font-extrabold py-14">
+        <h1
+          data-aos="fade-down"
+          className="text-4xl md:text-5xl font-extrabold py-14">
           Tour Reviews
         </h1>
         <Swiper
@@ -372,7 +482,9 @@ export default function Home() {
           }}>
           {reviews.map(reviewer => (
             <SwiperSlide key={reviewer.id}>
-              <div className="relative w-64 xl:w-80 mx-auto">
+              <div
+                data-aos="flip-left"
+                className="relative w-64 xl:w-80 mx-auto">
                 <p className="text-sm absolute z-10 px-4 text-neutral-800 font-light leading-8 flex h-full items-center w-full pb-12 xl:pb-16 xl:text-base">
                   {reviewer.comment}
                 </p>
@@ -383,8 +495,14 @@ export default function Home() {
                   }}
                 />
               </div>
-              <h3 className="font-semibold text-lg mb-2">{reviewer.name}</h3>
-              <p className="text-sm text-neutral-500 font-light">
+              <h3
+                data-aos="flip-left"
+                className="font-semibold text-lg mb-2">
+                {reviewer.name}
+              </h3>
+              <p
+                data-aos="flip-left"
+                className="text-sm text-neutral-500 font-light">
                 {reviewer.title}
               </p>
             </SwiperSlide>
@@ -396,7 +514,7 @@ export default function Home() {
       <div
         className="hero"
         style={{
-          backgroundImage: "url(./pulau-abang.jpg)",
+          backgroundImage: "url(./kepri-coral.jpg)",
           height: "60vh",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
@@ -404,14 +522,20 @@ export default function Home() {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="md:max-w-2xl lg:max-w-3xl">
-            <h1 className="mb-10 text-5xl sm:text-7xl font-extrabold">
+            <h1
+              data-aos="zoom-in-down"
+              className="mb-10 text-5xl sm:text-7xl font-extrabold">
               Are You Still Interested To Tour?
             </h1>
-            <p className="mb-10 text-sm sm:text-base">
+            <p
+              data-aos="zoom-in-down"
+              className="mb-10 text-sm sm:text-base">
               We Offer A Wide Range Of Procedures To Help You Get The Perfect
               Smile
             </p>
-            <button className="bg-green-600 px-4 py-2 rounded-full text-white font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
+            <button
+              data-aos="zoom-in-up"
+              className="bg-green-600 px-4 py-2 rounded-full text-white font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
               Book a Tour!
             </button>
           </div>
@@ -420,9 +544,15 @@ export default function Home() {
 
       {/* Question */}
       <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-14 md:px-0">
-        <h1 className="text-4xl md:text-5xl font-extrabold py-14">Question?</h1>
+        <h1
+          data-aos="fade-down"
+          className="text-4xl md:text-5xl font-extrabold py-14">
+          Question?
+        </h1>
         <div className="flex flex-col gap-6 sm:flex-row sm:justify-between px-3 sm:px-0">
-          <div className="flex gap-4 items-center group sm:w-1/3">
+          <div
+            data-aos="fade-right"
+            className="flex gap-4 items-center group sm:w-1/3">
             <div className="border border-green-600 rounded-full p-3 group-hover:bg-green-600 duration-500">
               <FaMap className="text-xl text-green-600 group-hover:text-white duration-500" />
             </div>
@@ -433,7 +563,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex gap-4 items-center group sm:w-1/3">
+          <div
+            data-aos="fade-right"
+            className="flex gap-4 items-center group sm:w-1/3">
             <div className="border border-green-600 rounded-full p-3 group-hover:bg-green-600 duration-500">
               <IoLogoWhatsapp className="text-xl text-green-600 group-hover:text-white duration-500" />
             </div>
@@ -446,7 +578,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex gap-4 items-center group sm:w-1/3">
+          <div
+            data-aos="fade-right"
+            className="flex gap-4 items-center group sm:w-1/3">
             <div className="border border-green-600 rounded-full p-3 group-hover:bg-green-600 duration-500">
               <IoMail className="text-xl text-green-600 group-hover:text-white duration-500" />
             </div>
@@ -491,6 +625,7 @@ export default function Home() {
             />
           </div>
           <button
+            data-aos="zoom-in"
             type="submit"
             className="bg-green-600 mt-5 px-4 py-2 rounded-full text-white font-semibold hover:scale-110 duration-500 text-sm sm:text-base">
             Send Message
