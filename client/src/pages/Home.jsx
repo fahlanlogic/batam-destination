@@ -417,12 +417,12 @@ export default function Home() {
                 <FaLocationArrow />
               </div>
               <h3
-                data-aos="fade-left"
+                data-aos="fade-right"
                 className="font-semibold text-lg mb-3">
                 Beatiful Place
               </h3>
               <p
-                data-aos="fade-left"
+                data-aos="fade-right"
                 className="font-light text-neutral-500 leading-6 text-sm">
                 You know Batam is a beautiful place and spectacular to travel,
                 with us, you stay Enjoy the natural beauty of Batam and the
