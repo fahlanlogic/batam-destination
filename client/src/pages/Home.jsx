@@ -563,7 +563,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=6281271742017"
             data-aos="fade-right"
             className="flex gap-4 items-center group sm:w-1/3">
             <div className="border border-green-600 rounded-full p-3 group-hover:bg-green-600 duration-500">
@@ -577,7 +579,7 @@ export default function Home() {
                 <p className="hidden sm:block">+62859 4202 5557</p>
               </div>
             </div>
-          </div>
+          </a>
           <div
             data-aos="fade-right"
             className="flex gap-4 items-center group sm:w-1/3">
@@ -587,7 +589,7 @@ export default function Home() {
             <div className="text-left">
               <p className="font-semibold">Email Us</p>
               <p className="font-light text-neutral-500 text-sm">
-                niagaumum1@gmail.com
+                destinationbatam@gmail.com
               </p>
             </div>
           </div>

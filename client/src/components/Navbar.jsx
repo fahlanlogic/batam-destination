@@ -19,18 +19,21 @@ export default function Navbar() {
       xl:max-w-6xl md:py-5 sm:px-0">
         <h1 className="font-bold">BatamDestination</h1>
         <div className="flex w-full mx-auto text-xs sm:text-sm justify-around md:justify-end gap-6">
-          <div className="flex items-center gap-2">
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=6281271742017"
+            className="flex items-center gap-2">
             <div className="p-1 rounded-full bg-green-600 text-white text-[10px] sm:text-xs">
               <IoLogoWhatsapp />
             </div>
             <p>081271742017</p>
             <p className="hidden sm:block">{" | "}085942025557</p>
-          </div>
+          </a>
           <div className="flex items-center gap-2">
             <div className="p-1 rounded-full bg-green-600 text-white text-[10px] sm:text-xs">
               <IoMail />
             </div>
-            <p>niagaumum1@gmail.com</p>
+            <p>destinationbatam@gmail.com</p>
           </div>
         </div>
       </nav>
