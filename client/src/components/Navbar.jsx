@@ -17,7 +17,14 @@ export default function Navbar() {
       <nav
         className="py-3 px-3 mx-auto text-center space-y-3  text-white shadow-sm md:flex justify-between items-center md:space-y-0 md:max-w-2xl lg:max-w-4xl
       xl:max-w-6xl md:py-5 sm:px-0">
-        <h1 className="font-bold">BatamDestination</h1>
+        <div className="font-bold items-center gap-2 flex justify-center">
+          <img
+            src="./logo.svg"
+            alt="logo"
+            className="h-5 w-5"
+          />
+          <h1>BatamDestination</h1>
+        </div>
         <div className="flex w-full mx-auto text-xs sm:text-sm justify-around md:justify-end gap-6">
           <a
             target="_blank"
