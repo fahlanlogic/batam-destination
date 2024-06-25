@@ -100,7 +100,7 @@ export default function Home() {
       {
         id: 9,
         name: "Hutan Wisata Mata Kucing",
-        image: "./hutan-wisata-mata-kucing-batam.bmp",
+        image: "./hutan-wisata-mata-kucing-batam.jpg",
         description:
           "Tempat wisata di Batam dimana Anda dapat menikmati wisata alam sambil melihat beberapa fauna seperti elang, monyet, kera hitam, kera cokelat dan masih banyak lagi. Tempat ini juga dikenal sebagai kebun binatang mini.",
         discount_price: 10000,
@@ -154,7 +154,7 @@ export default function Home() {
       {
         id: 15,
         name: "Batam Zoo",
-        image: "./batam-zoo.jpeg",
+        image: "./batam-zoo.jpg",
         description:
           "Anda bisa melihat berbagai binatang yang dipelihara di sana, di antaranya capybara, domba merino, domba garut, kuda poni, burung unta, burung emu, burung rhea, burung macaw, rusa tutul, alpaka, dan hewan lainnya.",
         discount_price: 10000,
@@ -347,7 +347,7 @@ export default function Home() {
           </div>
           <div className="flex justify-between my-10">
             <img
-              data-aos="fade-right"
+              data-aos="fade-up"
               src="./avanza.png"
               alt=""
               className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
@@ -359,7 +359,7 @@ export default function Home() {
               className="h-28 sm:h-32 hidden sm:block md:h-32 lg:h-44 xl:h-52"
             />
             <img
-              data-aos="fade-left"
+              data-aos="fade-up"
               src="./hiace.png"
               alt=""
               className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
