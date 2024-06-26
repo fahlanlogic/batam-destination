@@ -155,7 +155,7 @@ export default function TourPlaces() {
   }, []);
 
   return (
-    <div className="h-screen flex items-center justify-center mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
+    <div id="tour-places" className="h-screen flex items-center justify-center mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:px-0">
       <div className="w-full">
         <h1
           data-aos="fade-down"

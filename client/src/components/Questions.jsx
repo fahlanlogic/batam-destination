@@ -14,7 +14,9 @@ export default function Questions() {
   };
 
   return (
-    <div className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-14 md:px-0">
+    <div
+      id="questions"
+      className="mx-auto text-center px-3 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mb-14 md:px-0">
       <h1
         data-aos="fade-down"
         className="text-4xl md:text-5xl font-extrabold py-14">

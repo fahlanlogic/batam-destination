@@ -24,7 +24,11 @@ export default function HeroSecond() {
             We Offer A Wide Range Of Procedures To Help You Get The Perfect
             Smile
           </p>
-          <Button aos="zoom-in">Book a Tour!</Button>
+          <Button
+            to={"#questions"}
+            aos="zoom-in">
+            Book a Tour!
+          </Button>
         </div>
       </div>
     </div>

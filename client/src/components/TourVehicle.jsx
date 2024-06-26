@@ -48,7 +48,11 @@ export default function TourVehicle() {
           heart and satisfaction. We also provide vehicles with super
           comfortable facilities for you, it's all here.
         </p>
-        <Button aos="zoom-in">Book Now</Button>
+        <Button
+          to={"#questions"}
+          aos="zoom-in">
+          Book Now
+        </Button>
       </div>
     </article>
   );

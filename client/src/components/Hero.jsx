@@ -25,7 +25,11 @@ export default function Hero() {
             Enjoy Batam's natural charm, a combination of white sandy beaches,
             lush green forests and stunning sunsets
           </p>
-          <Button aos="zoom-in-up">Explore</Button>
+          <Button
+            to={"#tour-places"}
+            aos="zoom-in-up">
+            Explore
+          </Button>
         </div>
       </div>
     </div>
