@@ -28,7 +28,7 @@ export default function Home() {
       {
         id: 1,
         name: "Kepri Coral",
-        image: "./kepri-coral.jpg",
+        image: "./images/kepri-coral.jpg",
         description:
           "Selain menikmati pesona laut yang eksotis, para tamu juga bisa menikmati wisata alam yang masih asri inilah hutan mangrove. Di mana para tamu disuguhkan hamparan pepohonan hijau serta spot foto yang menarik untuk diabadikan.",
         discount_price: 10000,
@@ -37,7 +37,7 @@ export default function Home() {
       {
         id: 2,
         name: "Pulau Ranoh",
-        image: "./pulau-ranoh.jpg",
+        image: "./images/pulau-ranoh.jpg",
         description:
           "Pulau ini menawarkan keindahan pantai bersih dan pasir putih yang menakjubkan.",
         discount_price: 10000,
@@ -46,7 +46,7 @@ export default function Home() {
       {
         id: 3,
         name: "Pantai Tunjuk",
-        image: "./pulau-tunjuk.jpg",
+        image: "./images/pulau-tunjuk.jpg",
         description:
           "Menawarkan pantai dengan pasir putih bersih dan panorama matahari terbit dan tenggelam yang memukau.",
         discount_price: 10000,
@@ -55,7 +55,7 @@ export default function Home() {
       {
         id: 4,
         name: "Sea Forest Adventure",
-        image: "./sea-forest-adventure.webp",
+        image: "./images/sea-forest-adventure.webp",
         description:
           "Wisata air dengan berbagai wahana permainan yang seru, cocok untuk keluarga yang ingin bersenang-senang bersama.",
         discount_price: 10000,
@@ -64,7 +64,7 @@ export default function Home() {
       {
         id: 5,
         name: "Pantai Mirota",
-        image: "./pantai-mirota.jpg",
+        image: "./images/pantai-mirota.jpg",
         description:
           "Dikenal sebagai surga pasir putih di ujung Batam, pantai ini menawarkan keindahan alam yang masih asli dan terjaga.",
         discount_price: 10000,
@@ -73,7 +73,7 @@ export default function Home() {
       {
         id: 6,
         name: "Ocarina Park",
-        image: "./ocarina.jpg",
+        image: "./images/ocarina.jpg",
         description:
           "Dengan luas sekitar 40 hektar, taman ini menawarkan berbagai wahana seperti Waterpark dan Giant Wheels dengan harga tiket yang terjangkau.",
         discount_price: 10000,
@@ -82,7 +82,7 @@ export default function Home() {
       {
         id: 7,
         name: "Alun-alun Engku Putri",
-        image: "./engku-putri.jpg",
+        image: "./images/engku-putri.jpg",
         description:
           "Lapangan besar di pusat kota yang menjadi tempat nongkrong yang ramai terutama pada sore hari.",
         discount_price: 10000,
@@ -91,7 +91,7 @@ export default function Home() {
       {
         id: 8,
         name: "Welcome To Batam",
-        image: "./welcome-to-batam.jpg",
+        image: "./images/welcome-to-batam.jpg",
         description:
           "Sebuah tulisan besar yang mirip dengan Hollywood di Amerika, menjadi tempat hits untuk pengambilan foto.",
         discount_price: 10000,
@@ -100,7 +100,7 @@ export default function Home() {
       {
         id: 9,
         name: "Hutan Wisata Mata Kucing",
-        image: "./hutan-wisata-mata-kucing-batam.jpg",
+        image: "./images/hutan-wisata-mata-kucing-batam.jpg",
         description:
           "Tempat wisata di Batam dimana Anda dapat menikmati wisata alam sambil melihat beberapa fauna seperti elang, monyet, kera hitam, kera cokelat dan masih banyak lagi. Tempat ini juga dikenal sebagai kebun binatang mini.",
         discount_price: 10000,
@@ -109,7 +109,7 @@ export default function Home() {
       {
         id: 10,
         name: "Pantai Glory Melur",
-        image: "./glory-melur.jpg",
+        image: "./images/glory-melur.jpg",
         description:
           "Sesuai namanya, Glory Melur dikonsep bergaya resort. Saat datang ke sini, pengunjung akan melihat banyak gazebo dan beberapa aula beratap jerami yang biasanya ada di resort-resort",
         discount_price: 10000,
@@ -118,7 +118,7 @@ export default function Home() {
       {
         id: 11,
         name: "Batam Beach Club",
-        image: "./batam-beach-club.jpeg",
+        image: "./images/batam-beach-club.jpeg",
         description:
           "Begitu sampai di dalam, pengunjung akan merasakan, aroma tepi pantai dan laut. Ada kolam renang menghadap laut serta pasir dan lounge.",
         discount_price: 10000,
@@ -127,7 +127,7 @@ export default function Home() {
       {
         id: 12,
         name: "Pantai Vio-vio",
-        image: "./vio-vio-beach.jpg",
+        image: "./images/vio-vio-beach.jpg",
         description:
           "Viovio Beach & Resort menawarkan akomodasi di Galang, Batam dan berjarak 100 meter from Pantai Viovio. Properti ini memiliki fasilitas akses WiFi gratis. Setiap kamar dilengkapi dengan AC. Shower tersedia di kamar mandi.",
         discount_price: 10000,
@@ -136,7 +136,7 @@ export default function Home() {
       {
         id: 13,
         name: "Batam Food Court",
-        image: "./batam-foodcourt.jpeg",
+        image: "./images/batam-foodcourt.jpeg",
         description:
           "Nagoya Food Court menjual berbagai macam makanan mulai dari menu tradisional, nusantara, western food, chinese food hingga makanan japanese food. Keberadaan Nagoya Food Court bisa dijadikan sebagai referensi untuk memenuhi semua kebutuhan keluarga.",
         discount_price: 10000,
@@ -145,7 +145,7 @@ export default function Home() {
       {
         id: 14,
         name: "Batam Seafood",
-        image: "./batam-seafood.jpeg",
+        image: "./images/batam-seafood.jpeg",
         description:
           "Love Seafood Tanjung Piayu Laut menjadi surganya hidangan laut yang patut dicoba. Dengan konsep unik restoran apung di atas laut, restoran ini tak cuma lezat tapi juga punya pemandangan memesona dan harga terjangkau. Punya daya tarik yang membuat Love Seafood selalu ramai dikunjungi wisatawan.",
         discount_price: 10000,
@@ -154,7 +154,7 @@ export default function Home() {
       {
         id: 15,
         name: "Batam Zoo",
-        image: "./batam-zoo.jpg",
+        image: "./images/batam-zoo.jpg",
         description:
           "Anda bisa melihat berbagai binatang yang dipelihara di sana, di antaranya capybara, domba merino, domba garut, kuda poni, burung unta, burung emu, burung rhea, burung macaw, rusa tutul, alpaka, dan hewan lainnya.",
         discount_price: 10000,
@@ -163,7 +163,7 @@ export default function Home() {
       {
         id: 16,
         name: "Batam Light Festival",
-        image: "./batam-light-festival.png",
+        image: "./images/batam-light-festival.png",
         description:
           "Tempat wisata ini memiliki konsep taman lampu dan menghadirkan berbagai hiburan menarik seperti dekorasi lighting, air mancur menari atau dancing fountain dan video mapping.",
         discount_price: 10000,
@@ -225,7 +225,7 @@ export default function Home() {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage: "url(./welcome-to-batam.jpg)",
+          backgroundImage: "url(./images/welcome-to-batam.jpg)",
           height: "100vh",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
@@ -348,19 +348,19 @@ export default function Home() {
           <div className="flex justify-between my-10">
             <img
               data-aos="fade-up"
-              src="./avanza.png"
+              src="./images/avanza.png"
               alt=""
               className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
             />
             <img
               data-aos="fade-up"
-              src="./innova.png"
+              src="./images/innova.png"
               alt=""
               className="h-28 sm:h-32 hidden sm:block md:h-32 lg:h-44 xl:h-52"
             />
             <img
               data-aos="fade-up"
-              src="./hiace.png"
+              src="./images/hiace.png"
               alt=""
               className="h-[115px] sm:h-32 md:h-32 lg:h-44 xl:h-52"
             />
@@ -514,7 +514,7 @@ export default function Home() {
       <div
         className="hero"
         style={{
-          backgroundImage: "url(./kepri-coral.jpg)",
+          backgroundImage: "url(./images/kepri-coral.jpg)",
           height: "60vh",
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
