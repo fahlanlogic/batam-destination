@@ -19,7 +19,7 @@ export default function Navbar() {
       xl:max-w-6xl md:py-5 sm:px-0">
         <div className="font-bold items-center gap-2 flex justify-center">
           <img
-            src="./logo.svg"
+            src="./images/logo.svg"
             alt="logo"
             className="h-5 w-5"
           />
